@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "onlineGameStation": {
+    "kuexd-frontend": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/online-game-station",
+            "outputPath": "dist/kuexd-frontend",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -64,10 +64,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "onlineGameStation:build:production"
+              "buildTarget": "kuexd-frontend:build:production"
             },
             "development": {
-              "buildTarget": "onlineGameStation:build:development"
+              "buildTarget": "kuexd-frontend:build:development"
             }
           },
           "defaultConfiguration": "development"
